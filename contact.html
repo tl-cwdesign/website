@@ -17,6 +17,10 @@
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/mobile.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/copied.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+
 
 
 <!-- JS
@@ -58,48 +62,40 @@
 
 <!-- Main Body
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="contact">
+  <div class="homepage">
 
-<!-- Contact Section
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="section weston-purple">
-      <div class="contact">
-        <div class="table">
-          <div class="cell">
-            <div class="image" style="background-image:url(./images/material.jpg);">
-              <!--// cover image //-->
-              <img src="images/material.jpg" alt="" class="show_mobile" />
-              <!-- <span class="">Contact</span> -->
-            </div>
-          </div>
-            <div class="cell">
-              <div class="text centertext">
-                <form id="ajax-contact" method="post" action="https://formspree.io/caroline@weston-design.com">
-                  <div class="field">
-                    <input type="text" placeholder="name" id="name" name="name" required>
-                  </div>
-                  <div class="field">
-                      <input type="email" placeholder="email" id="email" name="_replyto" required>
-                  </div>
+    <section class="contact-area pt-100 pb-100 relative">
+			<div class="overlay overlay-bg"></div>
+			<div class="container font">
+				<div class="row justify-content-center text-center">
+					<div class="single-contact col-lg-6 col-md-8">
+						<h2 class="text-white" style="font-weight:bold">Contact Me</h2>
+						<p class="text-white" style="font-size:18px">
+							Leave your name and email and I'll get back to you as soon as I can
+						</p>
+					</div>
+				</div>
+				<form id="ajax-contact" action="https://formspree.io/caroline@weston-design.com" method="post" class="contact-form">
+					<div class="row justify-content-center">
+						<div class="col-lg-5">
+							<input name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-20" required="" type="text">
+						</div>
+            <div class="col-lg-5">
+							<input name="_replyto" placeholder="Enter your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-20" required="" type="email">
+						</div>
+						<div class="col-lg-10">
+							<textarea class="common-textarea mt-20" name="message" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+					</div>
+					<div class="col-lg-10 d-flex justify-content-end">
+						<button class="primary-btn white-bg d-inline-flex align-items-center mt-20"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button> <br>
+					</div>
+					<div class="alert-msg"></div>
+					</div>
+				</form>
+			</div>
+		</section>
 
-                  <div class="field">
-                      <textarea id="message" placeholder="message" name="message" required></textarea>
-                  </div>
-
-                  <div class="field">
-                      <button class="form-submit" type="submit">send</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-
-<!-- End Main Body
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
   </div>
-
 <!-- Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="footer">
@@ -111,7 +107,7 @@
           <div class="cell">
           	<div class="cols">
             	<div class="col one-half">
-                    <p>Weston Design<br />
+                    <p style="color:#58366F">Weston Design<br />
                     46 Elsworthy Road<br />
                     London, NW3 3BU</p>
               </div>
@@ -129,13 +125,13 @@
 <!-- Menu Drawer
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <div id="menu_drawer" class="centertext">
+  <div id="menu_drawer" class="centertext" style="background-color: 5f3a78;box-shadow: 2px 1px 1px 1px #BDBDBD">
     <div class="table">
     	<div class="cell">
        <ul class="ginger_bold">
-         <li class="menu-item"><a href="/">home</a></li>
          <li class="menu-item"><a href="/about">about</a></li>
          <li class="menu-item"><a href="/work">portfolio</a></li>
+         <li class="menu-item"><a href="/contact">contact</a></li>
        </ul>
      </div>
     </div>
